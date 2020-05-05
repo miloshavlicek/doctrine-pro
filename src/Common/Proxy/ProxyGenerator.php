@@ -1055,7 +1055,7 @@ EOT;
 		\ReflectionMethod $method,
 		\ReflectionParameter $parameter = null
 	) {
-		$name      = (string) $type;
+		$name      = get_class($type);
 		$nameLower = strtolower($name);
 
 		if ('self' === $nameLower) {
